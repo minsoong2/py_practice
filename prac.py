@@ -1,17 +1,15 @@
 # import sys
-# a, b, c = map(int, sys.stdin.readline().split)
+# a, b, c = map(int, sys.stdin.readline().split())
 # a = int(sys.stdin.readline())
-# a, b, c = map(int, input().split())
+# a, b = map(int, input().split())
+# arr = list(map(int, input().split()))
+# print(i, end=' ') end='' 줄바꿈 제거
 
-a = int(input())
-b = int(input())
+a, b = map(int, input().split())
+# b = int(input())
 
-sum = 0
-for i in range(b):
-    c, d = map(int, input().split())
-    sum += c*d
+arr = list(map(int, input().split()))
 
-if a == sum:
-    print('Yes')
-else:
-    print('No')
+for i in arr:
+    if i < b:
+        print(i, end=' ')
