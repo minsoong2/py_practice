@@ -10,3 +10,16 @@
 # b = int(input())
 
 
+a, b = map(int, input().split())
+
+l = [0] * a
+
+for i in range(a):
+    l[i] = i+1
+
+for i in range(b):
+    c, d = map(int, input().split())
+    l[c-1], l[d-1] = l[d-1], l[c-1]
+
+for i in range(a):
+    print(l[i], end=' ')
