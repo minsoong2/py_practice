@@ -6,19 +6,19 @@
 # list -> int는 append x
 # print(i, end=' ') end='' 줄바꿈 제거
 # cnt = len(set(list)) * set -> 중복제거 *
-
-# 정수 문자열 출력
-# data = list(map(str, input().split()))
-# num = int(data[0])
-# string = data[1]
+#
 
 # a = int(input())
 # b = int(input())
 
-a = int(input())
+s = input()
 
-for i in range(1, a+1):
-    print(' '*(a-i) + '*'*(2*i-1))
+l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+     'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+arr = [-1] * 26
+for i in range(len(s)):
+    if s[i] in l:
+        arr[l.index(s[i])] = s.index(s[i])
 
-for j in range(a-1, 0, -1):
-    print(' ' * (a - j) + '*' * (2 * j - 1))
+for i in range(len(l)):
+    print(arr[i], end=' ')
