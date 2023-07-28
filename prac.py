@@ -14,11 +14,27 @@
 
 # a = int(input())
 # b = int(input())
+import sys
 
-a = int(input())
+s = int(sys.stdin.readline())
+arr = list(map(int, sys.stdin.readline().split()))
+sum = int(sys.stdin.readline())
 
-for i in range(1, a+1):
-    print(' '*(a-i) + '*'*(2*i-1))
+arr.sort()
+cnt = 0
+i, j = 0, 0
+if len(arr) <= 100000:
+    for _ in range(len(arr)):
+        num = arr[i] + arr[len(arr) - j - 1]
+        if sum == num:
+            cnt += 1
+            i += 1
+            j += 1
+        elif sum > num:
+            i += 1
+        else:
+            j += 1
 
-for j in range(a-1, 0, -1):
-    print(' ' * (a - j) + '*' * (2 * j - 1))
+        if i >= len(arr) - j - 1:
+            break
+print(cnt)
