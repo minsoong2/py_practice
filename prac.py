@@ -17,5 +17,3 @@
 # a = int(input())
 # b = int(input())
 
-n, b = input().split()
-print(int(n, int(b)))
