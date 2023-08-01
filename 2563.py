@@ -17,3 +17,23 @@
 # a = int(input())
 # b = int(input())
 
+paper = [[0]*100 for _ in range(100)]
+
+a = int(input())
+
+matrix = []
+for i in range(a):
+    row = list(map(int, input().split()))
+    matrix.append(row)
+
+for i in matrix:
+    for j in range(i[0], i[0]+10):
+        for k in range(i[1], i[1]+10):
+            paper[j][k] += 1
+
+cnt = 0
+for i in paper:
+    for element in i:
+        if element == 0:
+            cnt += 1
+print(10000-cnt)
