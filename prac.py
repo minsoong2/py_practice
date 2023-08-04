@@ -17,7 +17,3 @@
 # a = int(input())
 # b = int(input())
 
-# Equilateral :  세 변의 길이가 모두 같은 경우
-# Isosceles : 두 변의 길이만 같은 경우
-# Scalene : 세 변의 길이가 모두 다른 경우
-
