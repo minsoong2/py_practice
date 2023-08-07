@@ -1,6 +1,7 @@
 # import sys
 # a, b, c = map(int, sys.stdin.readline().split())
 # a = int(sys.stdin.readline())
+
 # a, b = map(int, input().split())
 # arr = list(map(int, input().split())) * list 공백기준 선언 *
 # list -> int는 append x
@@ -16,6 +17,4 @@
 
 # a = int(input())
 # b = int(input())
-n = int(input())
-print((n**2 - n) // 2)
-print(2)
+
