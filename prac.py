@@ -16,4 +16,6 @@
 
 # a = int(input())
 # b = int(input())
-
+n = int(input())
+print((n**2 - n) // 2)
+print(2)
