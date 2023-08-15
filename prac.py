@@ -17,3 +17,16 @@
 
 # a = int(input())
 # b = int(input())
+
+# k_v = {}
+# for i in range(n):
+#     k, v = map(int, input().split())
+#     k_v[k] = v
+
+n = int(input())
+l = []
+for i in range(n):
+    l.append(input())
+l = list(set(l))
+l.sort(key=lambda x: len(x))
+print(l)
