@@ -6,7 +6,7 @@
 # arr = list(map(int, input().split())) * list 공백기준 선언 *
 # list -> int는 append x
 # print(i, end=' ') end='' 줄바꿈 제거
-# cnt = len(set(list)) * set -> 중복제거 *
+# set(list) * set -> list 중복제거 *
 
 # l = [i for i in range(10)] * 파이썬 리스트 정의 *
 
@@ -15,18 +15,10 @@
 # num = int(data[0])
 # string = data[1]
 
-# a = int(input())
-# b = int(input())
-
 # k_v = {}
 # for i in range(n):
 #     k, v = map(int, input().split())
 #     k_v[k] = v
 
 n = int(input())
-l = []
-for i in range(n):
-    l.append(input())
-l = list(set(l))
-l.sort(key=lambda x: len(x))
-print(l)
+l = list(map(int, input().split()))
