@@ -25,18 +25,19 @@
 
 # for element, count in my_counter.items():
 #     print(f"{element}: {count}")
-import sys
-from collections import Counter
 
-n_1 = int(sys.stdin.readline())
-l_1 = list(map(int, sys.stdin.readline().split()))
+a, b = map(int, input().split())
+dic_name = {}
+dic_idx = {}
+problem = {}
+for i in range(a):
+    pocketM = input()
+    dic_name[i + 1] = pocketM
+    dic_idx[pocketM] = i + 1
 
-n_2 = int(sys.stdin.readline())
-l_2 = list(map(int, sys.stdin.readline().split()))
-
-counter_l_1 = Counter(l_1)
-for i in l_2:
-    if counter_l_1[i] == 1:
-        print(1, end=' ')
+for i in range(b):
+    problem[i] = input()
+    if problem[i].isdigit():
+        print(dic_name.get(int(problem[i])))
     else:
-        print(0, end=' ')
+        print(dic_idx.get(problem[i]))
