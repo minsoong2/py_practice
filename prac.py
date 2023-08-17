@@ -26,3 +26,14 @@
 # for element, count in my_counter.items():
 #     print(f"{element}: {count}")
 
+import sys
+a, b = map(int, sys.stdin.readline().split())
+sum = 1
+m = max(a, b)
+for j in range(m, 0, -1):
+    if a % j == 0 and b % j == 0:
+        a = a // j
+        b = b // j
+        sum = j * a * b
+        print(sum)
+        break
