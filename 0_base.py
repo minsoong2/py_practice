@@ -1,6 +1,6 @@
 # import sys
 # a, b, c = map(int, sys.stdin.readline().strip('\n').split())
-# a = int(sys.stdin.readline().strip('\n'))
+# a = int(sys.stdin.readline())
 
 # a, b = map(int, input().split())
 # arr = list(map(int, input().split())) * list 공백기준 선언 *
