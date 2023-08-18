@@ -26,5 +26,3 @@
 # for element, count in my_counter.items():
 #     print(f"{element}: {count}")
 
-import sys
-
