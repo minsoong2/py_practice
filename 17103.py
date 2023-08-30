@@ -14,7 +14,6 @@ for i in range(num):
     cnt = 0
     even = int(sys.stdin.readline())
     prime_counter = Counter(prime_arr)
-    print(prime_counter)
     for j in prime_arr:
         check = even - j
         if j > check:
