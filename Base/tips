@@ -1,0 +1,19 @@
+0. greedy
+1. dfs, bfs, 완전탐색
+2. dp 기본
+
+3. brute-force
+4. back-tracking
+5. 문자열
+6. 자료구조 - 힙 스택 배열 벡터 트리 그래프 순열, 조합 (라이브러리 위주)
+
+Tips
+1. tuple
+    - 서로 다른 성질의 데이터를 묶어서 관리해야 할 떄
+    - shortest path (cost, node_num)
+    - hashing - key
+    - list 보다 메모리 효율적
+
+2.
+# import sys
+# a, b, c = map(int, sys.stdin.readline().split())
