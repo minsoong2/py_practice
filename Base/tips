@@ -14,6 +14,31 @@ Tips
     - hashing - key
     - list 보다 메모리 효율적
 
-2.
-# import sys
-# a, b, c = map(int, sys.stdin.readline().split())
+2. input()
+import sys
+a, b, c = map(int, sys.stdin.readline().split())
+
+3. list 공백기준 선언
+arr = list(map(int, input().split()))
+arr = list(map(int, sys.stdin.readline().split()))
+
+4. itertools
+    - 반복되는 형태의 데이터를 처리
+    - permutations, combinations, products, combinations_with_replacement
+
+5. heapq
+    - priority q
+
+6. bisect
+    - Binary Search
+
+7. collections
+    - deque
+    - Counter
+        - 등장횟수 세기
+
+8. math
+    - Factorial
+    - sqrt
+    - GCD
+    - pi.. (삼각함수)
