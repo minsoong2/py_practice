@@ -1,5 +1,10 @@
 import sys
 
+# input_data = input()
+# row = int(ord(input_data[0])) - int(ord('a')) + 1
+# col = int(input_data[1])
+# ord: 문자 -> ASCII
+
 x, y = 0, 0
 
 while True:
