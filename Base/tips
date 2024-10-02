@@ -42,3 +42,6 @@ arr = list(map(int, sys.stdin.readline().split()))
     - sqrt
     - GCD
     - pi.. (삼각함수)
+
+9. python
+    - 1s -> 20,000,000 연산
