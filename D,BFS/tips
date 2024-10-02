@@ -9,3 +9,15 @@ print(stack) // 순서대로(최하단) 출력
 
 recursive
     - RecursionError by recursion depth
+    - stack vs recursion
+
+gcd
+    - 두 자연수 A, B(A > B)에 대하여 A를 B로 나눈 나머지 R
+    - A와 B의 최대공약수는 B와 R의 최대 공약수와 같다
+        ex A   B
+           192 162
+           162 30
+           30  12
+           12  6
+
+DFS (Depth First Search)

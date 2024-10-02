@@ -13,3 +13,9 @@ def recursive_fact(n):
         return 1
 
     return n * recursive_fact(n - 1)
+
+def gcd(a, b):
+    if a % b == 0:
+        return b
+    else:
+        return gcd(b, a % b)
