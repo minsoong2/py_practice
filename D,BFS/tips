@@ -1,6 +1,11 @@
+***python***
+
 list(python - stack)
     - append()
     - pop()
 
 print(stack[::-1]) // 뒤로(최상단) 출력
 print(stack) // 순서대로(최하단) 출력
+
+recursive
+    - RecursionError by recursion depth
