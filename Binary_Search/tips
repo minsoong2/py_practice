@@ -15,3 +15,8 @@
           1 2   4 4   8
           bisect_left(a,x) = 2
           bisect_right(a,x) = 4
+
+Parametric Search
+    - 최적화 문제를 결정 문제(Yes or No)로 바꾸어 해결
+    - 이진 탐색으로 해결
+        - 특정 조건을 만족하는 가장 알맞는 값을 빠르게 찾는 최적화 문제
