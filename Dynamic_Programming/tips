@@ -6,3 +6,14 @@ Dynamic Programming
         - Overlapping Subproblem: 동일한 작은 문제를 반복 해결
     - Top-down      or      Bottom-up
       Memorization
+
+    - DP vs Divide and Conquer
+        공통점: Optimal Substructure
+        차이점: Overlapping Subproblem
+
+    - Solution
+        1. 그리디, 구현, 완전 탐색 등 문제인가?
+           if 답: x
+        2. 작은 문제로 큰 문제를 풀 수 있다. o
+           작은 문제가 반복된다. o
+           -> Dynamic programming
