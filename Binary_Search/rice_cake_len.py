@@ -1,5 +1,3 @@
-
-
 import sys
 
 n, cm = map(int, sys.stdin.readline().split())
