@@ -16,3 +16,7 @@ for i in range(cnt):
         if dp_table[j - unit[i]] != 10001:
             dp_table[j] = min(dp_table[j], dp_table[j - unit[i]] + 1)
 
+if dp_table[money] == 10001:
+    print(-1)
+else:
+    print(dp_table[money])
