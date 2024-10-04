@@ -1,4 +1,4 @@
-# a_(i-k) o -> a_(i-k) = a_i = min(a_i, a_(i-k) + 1)
+# a_(i-k) o -> a_i = min(a_i, a_(i-k) + 1)
 # a_(i-k) x -> a_i = INF
 import sys
 
