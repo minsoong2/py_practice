@@ -1,3 +1,4 @@
+# a_i = min(a_(i-1), a_(i/2), a_(i/3), a_(i/5)) +1
 import sys
 
 num = int(sys.stdin.readline())

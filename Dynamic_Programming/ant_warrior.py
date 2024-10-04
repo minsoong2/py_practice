@@ -1,3 +1,4 @@
+# a_i = max(a_(i-1), a_(i-2) + k_i)
 import sys
 
 num = int(sys.stdin.readline())
