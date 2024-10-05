@@ -1,11 +1,11 @@
 0. greedy v
 1. dfs, bfs, 완전탐색 v
-2. dp 기본
+2. dp 기본 v
 
 3. brute-force
 4. back-tracking
 5. 문자열 v
-6. 자료구조 - 힙 스택 배열 벡터 트리 그래프 순열, 조합 (라이브러리 위주)
+6. 자료구조 - 힙 스택 배열 벡터 트리 그래프 순열, 조합 (라이브러리 위주) v
 
 Tips
 1. tuple
