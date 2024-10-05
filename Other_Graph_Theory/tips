@@ -46,3 +46,4 @@ Disjoint Sets
 
         if 모든 원소 방문하기 전 queue가 빈다면
             cycle 존재
+        - O(V + E)
