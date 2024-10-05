@@ -31,3 +31,15 @@ Disjoint Sets
            2-1. 발생 x: MST에 포함
            2-2. 발생 o: MST에 포함 x
         3. 모든 간선에 대하여 2번 과정을 반복
+
+    - Topology sort
+        - Directed acyclic graph
+        - 모든 노드를 방향성에 거르지 않게 순서도록 나열
+        - Indegree : 특정 노드에 들어오는 간선 개수
+        - Outdegree : 특정 노드에 나가는 간선 개수
+        - Queue
+        과정
+        1. Indegree = 0 인 노드를 모두 queue에 넣는다.
+        2. queue가 빌 때까지 반복한다.
+            2-1. queue에서 원소를 꺼내 해당 노드에서 나가는 간선 제거
+            2-2(1). 새롭게 Indegree = 0 인 노드를 모두 queue에 넣는다.
