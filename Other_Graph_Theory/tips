@@ -10,4 +10,9 @@ Disjoint Sets
             1-1. A와 B의 루트 노드 A', B' 각각 찾기
             1-2. A'를 B'의 부모 노드로 설정
         2. 모든 Union 연산을 처리할 때까지 1 반복
-    -
+    - Problem
+        - 연산이 편향되게 이루어 지는 경우 (Find 비효율)
+        - Worst : O(V)
+            ex) 1 <- 2 <- 3 <- 4 <- 5
+      - Solution
+        - Path Compression
