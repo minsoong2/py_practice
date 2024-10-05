@@ -23,11 +23,11 @@ for i in range(edge):
     a, b = map(int, sys.stdin.readline().split())
     union_parent(parent, a, b)
 
-print('Sets:', end='')
+print('Sets: ', end='')
 for i in range(1, node + 1):
-    print(find_parent(parent, i))
+    print(find_parent(parent, i), end=' ')
 
 print()
-print('Parent table:', end='')
+print('Parent table: ', end='')
 for i in range(1, node + 1):
-    print(parent[i], end='')
+    print(parent[i], end=' ')
