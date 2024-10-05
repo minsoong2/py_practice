@@ -17,6 +17,6 @@ Disjoint Sets
       - Solution
         - Path Compression
 
-    - Minimum Spanning Tree (트리의 조건)
-        - 그래프에서 모든 노드를 포함
-        - 사이클이 존재하지 않는 부분 그래프
+    - Minimum Spanning Tree
+        - 그래프에서 모든 노드를 포함(트리의 조건)
+        - 사이클이 존재하지 않는(트리의 조건) 부분 그래프
