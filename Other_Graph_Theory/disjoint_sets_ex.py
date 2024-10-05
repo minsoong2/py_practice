@@ -34,6 +34,7 @@ for i in range(1, node + 1):
     print(find_parent(parent, i), end=' ')
 
 print()
+
 print('Parent table: ', end='')
 for i in range(1, node + 1):
     print(parent[i], end=' ')
