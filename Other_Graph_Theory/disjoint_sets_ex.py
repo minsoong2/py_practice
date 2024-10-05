@@ -2,10 +2,14 @@ import sys
 
 def find_parent(parent, x):
     if parent[x] != x:
-        # return find_parent(parent, parent[x])
+        return find_parent(parent, parent[x])
+    return x
+
+def find_parent_path_compression(parent, x):
+    if parent[x] != x:
         # Path Compression
         parent[x] = find_parent(parent, parent[x])
-    return x
+    return parent[x]
 
 def union_parent(parent, a, b):
     a = find_parent(parent, a)
