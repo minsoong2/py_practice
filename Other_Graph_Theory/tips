@@ -16,3 +16,7 @@ Disjoint Sets
             ex) 1 <- 2 <- 3 <- 4 <- 5
       - Solution
         - Path Compression
+
+    - Minimum Spanning Tree (트리의 조건)
+        - 그래프에서 모든 노드를 포함
+        - 사이클이 존재하지 않는 부분 그래프
