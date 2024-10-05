@@ -25,3 +25,5 @@ Shortest Path
             - but 매 단계마다 방문하지 않은 노드 중에 최단 거리를 찾는 과정 필요 x
         - 2d table 에 최단 거리 저장
         - dp
+        - 노드의 개수가 적을 때 효과적 O(N^3) -> 500개 이하
+        - D_ab = min(D_ab, D_ak + D_kb)
