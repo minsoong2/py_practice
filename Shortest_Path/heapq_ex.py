@@ -1,0 +1,17 @@
+import heapq
+
+# python default - Min Heap
+def heapsort(iterable):
+    h = []
+    result = []
+
+    for value in iterable:
+        heapq.heappush(h, value)
+    print(h)
+
+    for i in range(len(h)):
+        result.append(heapq.heappop(h))
+
+    return result
+
+print(heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0]))
