@@ -4,5 +4,16 @@ Shortest Path
         1. 한 지점에서 다른 한 지점까지의 최단 경로
         2. 한 지점에서 다른 모든 지점까지의 최단 경로
         3. 모든 지점에서 다른 모든 지점까지의 최단 경로
-    - greedy로 분류
-    - 완전한 최단 경로를 알기 위해서는 별도의 로직 구현
+    - Dijkstra
+        - greedy로 분류
+        - 완전한 최단 경로를 알기 위해서는 별도의 로직 구현
+        - O(v^2) -> node 5000개 이하
+            - python 1초에 20,000,000 연산 가정
+    - Dijkstar made by Priority Queue
+        - Heap
+            - Priority Queue 구현하기 위해 사용하는 자료구조
+            - Min, Max Heap
+        - Priority Queue
+            -    list  vs  Heap
+            삽입  O(1)      O(logN)
+            삭제  O(N)      O(logN)
