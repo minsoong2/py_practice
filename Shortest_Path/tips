@@ -17,3 +17,4 @@ Shortest Path
             -    list  vs  Heap
             삽입  O(1)      O(logN)
             삭제  O(N)      O(logN)
+        - O(ElogV)
