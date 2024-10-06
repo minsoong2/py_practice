@@ -21,6 +21,7 @@ Binary Indexed Tree
                 print(i, '의 마지막 비트:', (i & -i))
 
 Lowest Common Ancestor
+    - dfs
     과정
     1. 모든 노드 depth 계산
     2. 최소 공통 조상을 찾을 두 노드 확인
