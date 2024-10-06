@@ -19,3 +19,12 @@ Binary Indexed Tree
             k = 16
             for i in range(k + 1):
                 print(i, '의 마지막 비트:', (i & -i))
+
+Lowest Common Ancestor
+    과정
+    1. 모든 노드 depth 계산
+    2. 최소 공통 조상을 찾을 두 노드 확인
+       2-1. 먼저 두 노드의 깊이가 동일하도록 거슬러 올라가기
+       2-2. 이후 부모가 같아질 때까지 반복적으로
+            두 노드의 부모 방향으로 거슬러 올라가기
+    3. 모든 LCA(a, b) 연산에 대하여 2번 과정 반복
