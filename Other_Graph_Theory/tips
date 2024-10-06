@@ -12,8 +12,7 @@ Disjoint Sets
         2. 모든 Union 연산을 처리할 때까지 1 반복
     - Problem
         - 연산이 편향되게 이루어 지는 경우 (Find 비효율)
-        - Worst : O(V)
-            ex) 1 <- 2 <- 3 <- 4 <- 5
+        - Worst : O(V)            ex) 1 <- 2 <- 3 <- 4 <- 5
       - Solution
         - Path Compression
 
