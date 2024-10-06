@@ -1,0 +1,8 @@
+Tree
+    - root node
+    - leaf node
+    - size : 트리에 포함된 모든 노드의 개수
+    - depth : 루트 노드부터의 거리
+    - h : depth 중 max
+    - degree : 각 노드의 자식 방향 edge 개수
+    - edge = node - 1
