@@ -32,8 +32,10 @@ Lowest Common Ancestor
     3. 모든 LCA(a, b) 연산에 대하여 2번 과정 반복
 
     시간 복잡도 개선
+    - dp
     - 노드를 거슬러 올라가는 속도 2^x
     - trade-off
     - 메모리 사용
       -> 각 노드의 2^i번째 부모에 대한 정보 기록
-    - O(logN)
+    - query -> O(logN)
+      모든 query -> O(ElogN)
