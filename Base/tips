@@ -1,2 +1,14 @@
 prime_number
     - O(number)
+    - 약수의 성질
+        - 가운데 약수를 기준으로 곱셈 연산에 대칭
+        ex) 2 * 8, 8 * 2
+        - 가운데 약수(제곱근)까지만 확인
+        - O(number^(1/2))
+    - eratosthenes
+        - 범위 안에 존재하는 모든 소수를 찾아내는 알고리즘
+        과정
+        1. 2 ~ N 모든 자연수 나열
+        2. 남은 수 중 아직 처리하지 않은 가장 작은 prime_number 찾는다.
+        3. prime_number를 제외한 prime_number의 배수를 모두 제거
+        4. 2, 3 반복
