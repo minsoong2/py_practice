@@ -34,4 +34,4 @@ else:
         if dist[i] == inf:
             print('-1')
         else:
-            print(dist[i], end=' ')
+            print(dist[i])
