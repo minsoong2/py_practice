@@ -14,7 +14,7 @@ prime_number
         2. 남은 수 중 아직 처리하지 않은 가장 작은 prime_number 찾는다.
         3. prime_number를 제외한 prime_number의 배수를 모두 제거
         4. 2, 3 반복
-    -Two pointers
+    - Two pointers
         - 리스트에 순차적으로 접근해야 할 때
           두 개의 점의 위치를 기록하면서 처리
         - O(N)
@@ -24,3 +24,9 @@ prime_number
         3. 현재 부분 합 < M, end_idx += 1
         4. 현재 부분 합 >= M, start_idx += 1
         5. 2,3,4 과정 반복
+    - Interval sum
+        - 특정 구간의 모든 수를 합한 값
+        - Query - left, right
+        - 각 query에 대한 [left, right]구간 합 출력
+        - O(N + M) by Prefix Sum
+        - array[right] - array[left -1]
