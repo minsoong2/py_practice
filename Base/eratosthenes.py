@@ -1,15 +1,15 @@
-def sieve_of_eratosthenes(n):
-    primes = [True] * (n + 1)
-    primes[0], primes[1] = False, False  # 0과 1은 소수가 아님
+import math
+import sys
 
-    for i in range(2, int(n**0.5) + 1):
-        if primes[i]:
-            for j in range(i * i, n + 1, i):
-                primes[j] = False
+num = int(sys.stdin.readline())
+arr = [True] * (num + 1)
+arr[0], arr[1] = False, False
 
-    prime_numbers = [i for i, is_prime in enumerate(primes) if is_prime]
-    return prime_numbers
+for i in range(2, int(math.sqrt(num)) + 1):
+    if arr[i] == True:
+        for j in range(i * i, num + 1, i):
+            arr[j] = False
 
-n = 100
-prime_numbers = sieve_of_eratosthenes(n)
-print(prime_numbers)
+for i in range(2, num + 1):
+    if arr[i] == True:
+        print(i, end=' ')
