@@ -1,5 +1,4 @@
 import sys
-from tokenize import group
 
 cnt = int(sys.stdin.readline())
 fear_list = list(map(int, sys.stdin.readline().split()))
