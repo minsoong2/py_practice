@@ -1,5 +1,6 @@
 # list로 구현 가능하지만 시간복잡도 고려 deque 사용
 # stack, queue 장점
+# deque () 안에는 iterable 한 객체 삽입
 from collections import deque
 
 q = deque()
