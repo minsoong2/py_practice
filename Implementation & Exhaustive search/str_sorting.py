@@ -1,18 +1,17 @@
 import sys
 
-input_data = sys.stdin.readline().rstrip()
-str_list = list()
-num_sum = 0
-for c in input_data:
-    if (c == '1' or c == '2' or c == '3' or c == '4' or c == '5'
-            or c == '6' or c == '7' or c == '8' or c == '9' or c == '0'):
-        num_sum += int(c)
+line = sys.stdin.readline().rstrip()
+new_line = []
+re = 0
+for i in line:
+    if (i == '1' or i == '2' or i == '3' or i == '4' or
+        i == '5' or i == '6' or i == '7' or i == '8' or
+        i == '9' or i == '0'):
+        re += int(i)
     else:
-        str_list.append(c)
+        new_line.append(i)
 
-str_list.sort()
-
-for i in str_list:
+new_line.sort()
+for i in new_line:
     print(i, end='')
-print(num_sum)
-
+print(re)
