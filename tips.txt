@@ -50,3 +50,11 @@ arr = list(map(int, sys.stdin.readline().split()))
 
 10. python
     - 1s -> 20,000,000 연산
+
+11 .join()
+words = ['Python', 'is', 'fun']
+result = ' '.join(words)
+
+nums = [1, 2, 3]
+result = ' '.join(map(str, nums))
+print(result)  # 출력: Python is fun

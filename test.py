@@ -1,16 +1,16 @@
 import sys
 
-n, k = map(int, sys.stdin.readline().split())
-arr1 = list(map(int, sys.stdin.readline().split()))
-arr2 = list(map(int, sys.stdin.readline().split()))
+n, l = map(int, sys.stdin.readline().split())
+arr = []
 
-arr1.sort()
-arr2.sort(reverse=True)
+def dfs():
+    if len(arr) == l:
+        re = ' '.join(map(str, arr))
+        print(re)
+        return
+    for i in range(1, n+1):
+        arr.append(i)
+        dfs()
+        arr.pop()
 
-for i in range(k):
-    if arr1[i] < arr2[i]:
-        arr1[i], arr2[i] = arr2[i], arr1[i]
-    else:
-        break
-
-print(sum(arr1))
+dfs()
