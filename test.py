@@ -1,18 +1,16 @@
 import sys
 
-l = int(sys.stdin.readline())
-arr = list(map(int, sys.stdin.readline().split()))
+n, k = map(int, sys.stdin.readline().split())
+arr1 = list(map(int, sys.stdin.readline().split()))
+arr2 = list(map(int, sys.stdin.readline().split()))
 
-def quick(arr):
-    if len(arr) <= 1:
-        return arr
+arr1.sort()
+arr2.sort(reverse=True)
 
-    pivot = arr[0]
-    tail = arr[1:]
+for i in range(k):
+    if arr1[i] < arr2[i]:
+        arr1[i], arr2[i] = arr2[i], arr1[i]
+    else:
+        break
 
-    l = [x for x in tail if x <= pivot]
-    r = [x for x in tail if x > pivot]
-
-    return quick(l) + [pivot] + quick(r)
-
-print(quick(arr))
+print(sum(arr1))
