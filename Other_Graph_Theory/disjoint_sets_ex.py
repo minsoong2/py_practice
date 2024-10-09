@@ -8,7 +8,7 @@ def find_parent(parent, x):
 def find_parent_path_compression(parent, x):
     if parent[x] != x:
         # Path Compression
-        parent[x] = find_parent(parent, parent[x])
+        parent[x] = find_parent_path_compression(parent, parent[x])
     return parent[x]
 
 def union_parent(parent, a, b):
