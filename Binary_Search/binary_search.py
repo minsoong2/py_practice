@@ -15,7 +15,7 @@ def binary_search_recursive(arr, target, start, end):
 
 def binary_search_loop(arr, target, start, end):
 
-    while start <= end:
+    while start < end:
         mid = (start + end) // 2
 
         if arr[mid] == target:
