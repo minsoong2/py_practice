@@ -1,15 +1,13 @@
 import sys
 
-num_str = sys.stdin.readline().strip()
-num_list = []
-for idx in range(len(num_str)):
-    num_list.append(int(num_str[idx]))
-
-num_max = 0
-for num in num_list:
-    if num_max == 0 or num_max == 1:
-        num_max += num
+cnt_string = sys.stdin.readline().strip()
+sum = 0
+for i in cnt_string:
+    if sum == 0 or sum == 1:
+        sum += int(i)
     else:
-        num_max *= num
-
-print(num_max)
+        if int(i) == 0 or int(i) == 1:
+            sum += int(i)
+        else:
+            sum *= int(i)
+print(sum)
