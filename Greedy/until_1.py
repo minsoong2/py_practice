@@ -17,15 +17,18 @@ while True:
 cnt += num - 1
 print(cnt)
 
-# while True:
-#     if num % div_num == 0:
-#         num = num / div_num
-#         cnt += 1
-#     else:
-#         num = num - 1
-#         cnt += 1
+
+# num, div = map(int, sys.stdin.readline().split())
+# cnt = 0
 #
+# while True:
 #     if num == 1:
 #         break
+#
+#     if num % div == 0:
+#         num = num // div
+#     else:
+#         num = num - 1
+#     cnt += 1
 #
 # print(cnt)
