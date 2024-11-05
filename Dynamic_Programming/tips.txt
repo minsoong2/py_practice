@@ -2,12 +2,12 @@ Dynamic Programming
     - 메모리를 적절히 사용하여 수행 시간 효율성을 비약적으로 향상시키는 방법
     - 이미 계산된 결과를 별도 메모리 영역에 저장 후 재사용
     - when
-        - Optimal Substructure: 큰 문제를 작은 문제로 나눠 답을 모아 큰 문제 해결
+        - eOptimal Substructur: 큰 문제를 작은 문제로 나눠 답을 모아 큰 문제 해결
         - Overlapping Subproblem: 동일한 작은 문제를 반복 해결
     - Top-down      or      Bottom-up
       Memorization
 
-    - DP vs Divide and Conquer
+    - DP vs Divide and Conquer(ex. Quick sort)
         공통점: Optimal Substructure
         차이점: Overlapping Subproblem
 
