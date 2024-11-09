@@ -15,3 +15,17 @@ for i in range(size):
     interval_sum -= arr[i]
 
 print(cnt)
+
+# size, m = map(int, sys.stdin.readline().split())
+# arr = list(map(int, sys.stdin.readline().split()))
+# re, cnt = 0, 0
+# for i in range(size):
+#     re = arr[i]
+#     for j in range(i + 1, size):
+#         if re >= m:
+#             break
+#         re += arr[j]
+#     if re == m:
+#         cnt += 1
+#
+# print(cnt)
